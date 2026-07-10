@@ -82,7 +82,7 @@ h1 { /*комментарий*/
     line-height: 24px;
     text-transform: uppercase;
     display: block;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 5px;
 }
 
