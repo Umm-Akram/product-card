@@ -54,10 +54,9 @@ h1 {
     display: flex;
     flex-direction: column;
 }
-.main-text description {
+.main-text.description {
     font-size: 13px;
     line-height: 18px;
-    padding-left: 10;
     margin-bottom: 15px;
     margin-top: 5px;
 }
@@ -80,6 +79,14 @@ h1 {
     line-height: 24px;
     text-transform: uppercase;
     display: block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
 
 .price {
@@ -87,5 +94,4 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
-    margin-bottom: 25px;
 }
