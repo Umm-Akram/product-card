@@ -1,35 +1,99 @@
-body{
+
+* {
+   box-sizing: border-box; 
+}
+
+body{ /*комментарий*/
         font-family: 'Montserrat', sans-serif;
         color: #515076;
 }
-img {
-    display: block;
-    margin-bottom: 30px;
+
+.container { /*комментарий*/
+    max-width: 1110px;
+    margin: 0 auto;
+    background-image: url("images/bg_1.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 790px auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
-h1 {
+h1 { /*комментарий*/
     font-size: 70px;
     font-weight: 400;
     text-align: center;
+    line-height: 78px;
+    margin-bottom: 131px;
+    margin-top: 206px;
 }
-.product {
+.product { /*комментарий*/
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    width: 1110px;
+    margin-bottom: 109px;
+    gap: 45px;
+
 }
-.product-item {
+.product-item { /*комментарий*/
     background-color: #F7F7FA;
     width: 340px;
     box-sizing: border-box;
-    margin-left: 85px;
     padding: 25px;
-    margin-bottom: 45px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.product-item img {
+    margin-bottom: 30px;
+    width: 290px;
 }
-.main-text {
+
+
+/*комментарий*/
+.main-text.description { /*комментарий*/
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.structure { /*комментарий*/
     font-size: 13px;
     line-height: 18px;
 }
-.for-skin {
+
+.list { /*комментарий*/
+    font-size: 13px;
+    line-height: 18px;
+    padding-left: 0;
+    margin: 0;
+    list-style-position: inside;
+
+}
+.for-skin { /*комментарий*/
     font-size: 12px;
     line-height: 24px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+h2 { /*комментарий*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.price { /*комментарий*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
 }
