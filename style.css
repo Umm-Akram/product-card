@@ -40,7 +40,7 @@ h1 { /*заголовок*/
     gap: 45px;
 
 }
-.product-item { /*карточка продукта*/
+.card { /*карточка продукта*/
     background-color: #F7F7FA;
     width: 340px;
     box-sizing: border-box;
@@ -50,12 +50,12 @@ h1 { /*заголовок*/
     flex-direction: column;
 } 
 
-.product-item img { /*изображение продукта*/
+.card__img { /*изображение продукта*/
     margin-bottom: 30px;
     width: 290px;
 }
 
-.for-skin { /*назначение для кожи*/
+.card__skin-type { /*назначение для кожи*/
     font-size: 12px;
     line-height: 24px;
     text-transform: uppercase;
@@ -64,19 +64,19 @@ h1 { /*заголовок*/
     margin-bottom: 5px;
 }
 
-.main-text.description { /*описание, что делает продукт*/
+.card__description { /*описание, что делает продукт*/
     font-size: 13px;
     line-height: 18px;
     margin-bottom: 15px;
     margin-top: 5px;
 }
 
-.structure { /*состав*/
+.card__structure { /*состав*/
     font-size: 13px;
     line-height: 18px;
 }
 
-.list { /*список состава*/
+.card__list { /*список состава*/
 
     font-size: 13px;
     line-height: 18px;
@@ -90,7 +90,7 @@ h2 { /*увлажняющий мусс и т.д.*/
     margin-bottom: 5px;
 }
 
-.price { /*цена*/
+.card__price { /*цена*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,7 +105,7 @@ h2 { /*увлажняющий мусс и т.д.*/
 
 
 
-.buy-button {
+.card__buy-button {
     font-family: Montserrat, sans-serif;
     color: rgb(40, 26, 57);
     font-size: 20px;
@@ -120,37 +120,42 @@ h2 { /*увлажняющий мусс и т.д.*/
     transition: background-color 0.3s ease;
 }
 
-.buy-button:hover {
+.card__buy-button:hover {
     background-color: #3fe231;
 }
 
-.buy-button:active {
+.card__buy-button:active {
     background-color: #2c9e1f;
 }
 
-.product-item:hover {
+.card:hover {
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     background-color: #91edd1;
 }
 
-.product-item-stock {
+.card--stock {
     background-color: #cdf6d0;
     color: #2c9e1f;
 }
 
-.stars {
+.card__stars {
     color: gold;
     font-size: 20px;
 }
 
-.stars {
+.card__stars {
     display: flex;
     gap: 4px; /* расстояние между звездами */
 }
 
-.product-rating {
+.card__rating {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.card__button--stock {
+    background-color: #2c8932;
+    color: #addba8;
 }
