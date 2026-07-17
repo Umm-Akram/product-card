@@ -208,7 +208,7 @@ h2 { /*увлажняющий мусс и т.д.*/
     gap: 8px;
 }
 
-.card__button--stock {
+.card__buy-button--stock {
     background-color: #2c8932;
     color: #addba8;
 }
