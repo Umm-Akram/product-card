@@ -11,7 +11,7 @@ body{ /*вся страница*/
 .container { /*фон одуванчик*/
     max-width: 1110px;
     margin: 0 auto;
-    background-image: url("images/bg_1.png");
+    background-image: url("../images/bg_1.png");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 790px auto;
@@ -40,15 +40,3 @@ h1 { /*заголовок*/
     gap: 45px;
 
 }
-
-
-
-
-
-/*доп.дз*/
-
-
-
-
-
-

@@ -1,12 +1,10 @@
 .rating__stars {
     color: gold;
     font-size: 20px;
-}
-
-.rating__stars {
     display: flex;
     gap: 4px; /* расстояние между звездами */
 }
+
 
 .card__rating {
     display: flex;
