@@ -1,0 +1,96 @@
+.card { /*карточка продукта*/
+    background-color: #F7F7FA;
+    width: 340px;
+    box-sizing: border-box;
+    padding: 25px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.card__img { /*изображение продукта*/
+    margin-bottom: 30px;
+    width: 290px;
+}
+
+.card__skin-type { /*назначение для кожи*/
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.card__description { /*описание, что делает продукт*/
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.card__structure { /*состав*/
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.card__list { /*список состава*/
+
+    font-size: 13px;
+    line-height: 18px;
+    padding-left: 0;
+    margin: 0;
+    list-style-position: inside;
+}
+
+h2 { /*увлажняющий мусс и т.д.*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card__price { /*цена*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.card__buy-button {
+    font-family: Montserrat, sans-serif;
+    color: rgb(40, 26, 57);
+    font-size: 20px;
+    padding: 15px 107px;
+    
+    margin-top: 30px ;
+
+    background-color: #81ed7f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card__buy-button:hover {
+    background-color: #3fe231;
+}
+
+.card__buy-button:active {
+    background-color: #2c9e1f;
+}
+
+.card:hover {
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #91edd1;
+}
+
+.card--stock {
+    background-color: #cdf6d0;
+    color: #2c9e1f;
+}
+
+.card__buy-button--stock {
+    background-color: #2c8932;
+    color: #addba8;
+}
+

@@ -1,0 +1,54 @@
+
+* {
+   box-sizing: border-box; 
+}
+
+body{ /*вся страница*/
+        font-family: 'Montserrat', sans-serif;
+        color: #515076;
+}
+
+.container { /*фон одуванчик*/
+    max-width: 1110px;
+    margin: 0 auto;
+    background-image: url("images/bg_1.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 790px auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+h1 { /*заголовок*/
+    font-size: 70px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 78px;
+    margin-bottom: 131px;
+    margin-top: 206px;
+}
+.product { /*все карточки*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    width: 1110px;
+    margin-bottom: 109px;
+    gap: 45px;
+
+}
+
+
+
+
+
+/*доп.дз*/
+
+
+
+
+
+
