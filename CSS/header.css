@@ -1,0 +1,53 @@
+.header { /*заголовок шапка сайта*/
+    background-color: #F7F7FA;
+    padding: 20px 0;
+}
+
+.header__container { /*заголовок шапка сайта*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo { /*логотип*/
+    font-size: 28px;
+    font-weight: 700;
+    color: #515076;
+    text-decoration: none;
+}
+
+.header__nav { /*навигация меню*/
+    display: flex;
+    gap: 35px;
+}
+
+.header__link { /*ссылки меню*/
+    text-decoration: none;
+    color: #515076;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.header__link:hover { /*ссылки меню*/
+    color: #2c8932;
+    cursor: pointer;
+}
+
+.header__button { /*кнопка в шапке*/
+    padding: 12px 24px;
+    background-color: #81ed7f;
+    color: #281a39;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header__button:hover { /*кнопка в шапке*/
+    background-color: #3fe231;
+}
+
+.header__button:active { /*кнопка в шапке*/
+    background-color: #2c9e1f;
+}
