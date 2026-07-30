@@ -52,3 +52,22 @@ function outputConsoleLog(message) {
 }
 
 outputConsoleLog('ДЗ №6')
+
+
+//Вывести заголовок в консоль
+
+const title = document.querySelector('h1');
+
+title.addEventListener('mouseenter', () => {   //ввод мыши
+  console.log(title.textContent);
+});
+
+
+
+const changeColorButton = document.querySelector('#change-color-button');
+
+console.log(changeColorButton);
+
+changeColorButton.addEventListener('click', () => {
+  changeColorButton.classList.toggle('button--active');
+});
