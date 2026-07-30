@@ -1,7 +1,54 @@
-const productCard = document.querySelector('.card');
-const changeColorCardButton = document.querySelector('#change-card-color-button');
-const randomColor = '#a8ccf5'
+// Покраска всех карточек
 
-changeColorCardButton.addEventListener('click', () => {
-  productCard.style.backgroundColor = randomColor;
+const productCards = document.querySelectorAll('.card');
+const changeColorAllCardButton = document.querySelector('#change-all-card-color-button');
+const blueColorHash = '#75dbf4'
+const pinkColorHash = '#f884cb'
+
+changeColorAllCardButton.addEventListener('click', () => {
+    productCards.forEach((card) => {
+        card.style.backgroundColor = blueColorHash;
+    });
+});
+
+
+// Покраска первой карточки
+
+const firstProductCard = document.querySelector('.card');
+const changeColorFirstCardButton = document.querySelector('#change-first-card-color-button');
+
+changeColorFirstCardButton.addEventListener('click', () => {
+  firstProductCard.style.backgroundColor = pinkColorHash
 })
+
+
+// Открыть google для новичков
+
+const openGoogleButton = document.querySelector('#open-google-button');
+
+openGoogleButton.addEventListener('click', openGoogle)
+
+
+function openGoogle() {
+  const answer = confirm('Вы действительно хотите открыть Google?');
+
+  if (answer === true) {
+    window.open('https://google.com')
+  } else {
+    return;
+  }
+}
+
+
+//Вывод консоль 
+
+const outputLogButton = document.querySelector('#output-console-log');
+
+outputLogButton.addEventListener('click', () => outputConsoleLog('ДЗ №6'))
+
+function outputConsoleLog(message) {
+  alert(message)
+  console.log(message)
+}
+
+outputConsoleLog('ДЗ №6')
