@@ -1,73 +1,69 @@
 // Покраска всех карточек
 
-const productCards = document.querySelectorAll('.card');
-const changeColorAllCardButton = document.querySelector('#change-all-card-color-button');
-const blueColorHash = '#75dbf4'
-const pinkColorHash = '#f884cb'
+const productCards = document.querySelectorAll(".card");
+const changeColorAllCardButton = document.querySelector(
+  "#change-all-card-color-button",
+);
+const blueColorHash = "#75dbf4";
+const pinkColorHash = "#f884cb";
 
-changeColorAllCardButton.addEventListener('click', () => {
-    productCards.forEach((card) => {
-        card.style.backgroundColor = blueColorHash;
-    });
+changeColorAllCardButton.addEventListener("click", () => {
+  productCards.forEach((card) => {
+    card.style.backgroundColor = blueColorHash;
+  });
 });
-
 
 // Покраска первой карточки
 
-const firstProductCard = document.querySelector('.card');
-const changeColorFirstCardButton = document.querySelector('#change-first-card-color-button');
+const firstProductCard = document.querySelector(".card");
+const changeColorFirstCardButton = document.querySelector(
+  "#change-first-card-color-button",
+);
 
-changeColorFirstCardButton.addEventListener('click', () => {
-  firstProductCard.style.backgroundColor = pinkColorHash
-})
-
+changeColorFirstCardButton.addEventListener("click", () => {
+  firstProductCard.style.backgroundColor = pinkColorHash;
+});
 
 // Открыть google для новичков
 
-const openGoogleButton = document.querySelector('#open-google-button');
+const openGoogleButton = document.querySelector("#open-google-button");
 
-openGoogleButton.addEventListener('click', openGoogle)
-
+openGoogleButton.addEventListener("click", openGoogle);
 
 function openGoogle() {
-  const answer = confirm('Вы действительно хотите открыть Google?');
+  const answer = confirm("Вы действительно хотите открыть Google?");
 
   if (answer === true) {
-    window.open('https://google.com')
+    window.open("https://google.com");
   } else {
     return;
   }
 }
 
+//Вывод консоль
 
-//Вывод консоль 
+const outputLogButton = document.querySelector("#output-console-log");
 
-const outputLogButton = document.querySelector('#output-console-log');
-
-outputLogButton.addEventListener('click', () => outputConsoleLog('ДЗ №6'))
+outputLogButton.addEventListener("click", () => outputConsoleLog("ДЗ №6"));
 
 function outputConsoleLog(message) {
-  alert(message)
-  console.log(message)
+  alert(message);
+  console.log(message);
 }
-
-outputConsoleLog('ДЗ №6')
-
 
 //Вывести заголовок в консоль
 
-const title = document.querySelector('h1');
+const title = document.querySelector("h1");
 
-title.addEventListener('mouseenter', () => {   //ввод мыши
+title.addEventListener("mouseenter", () => {
+  //ввод мыши
   console.log(title.textContent);
 });
 
-
-
-const changeColorButton = document.querySelector('#change-color-button');
+const changeColorButton = document.querySelector("#change-color-button");
 
 console.log(changeColorButton);
 
-changeColorButton.addEventListener('click', () => {
-  changeColorButton.classList.toggle('button--active');
+changeColorButton.addEventListener("click", () => {
+  changeColorButton.classList.toggle("button--active");
 });
