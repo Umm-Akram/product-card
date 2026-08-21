@@ -1,0 +1,42 @@
+1. ИМЯ ФУНКЦИИ ВСЕГДА НАЧИНАЕТСЯ С ГЛАГОЛА!
+2. Если функция возвращает значение (return) - исп-ем префикс get.
+3. Именуем camelCase-ом. Н-р
+
+function getUserInfo() {
+  return 'Влад, 20 лет';
+}
+
+console.log(getUserInfo());
+
+4. Если функция возвращает Boolean - используем префиксы is (является/это), has (имеет), can (умеет/может), should (должен). Н-р
+function isAdmin() { // является админом?
+  return true;
+}
+console.log(isAdmin()) // или н-р
+
+function hasAccess() { // имеет доступ?
+  return true
+}
+console.log(hasAccess()) // или н-р
+
+function canEditProductCard() { // может редактировать продуктовую карточку?
+  return true
+}
+console.log(canEditProductCard())
+
+5. Если функция обрабатывает событие - используем префиксы handle (управлять), on (при).
+
+// в html:
+/*1 шаг*/ <button id="test"> вывод консольлог <button/>
+// в js
+/*2 шаг*/const button = document.querySelector('#test'); // средство выбора запросов
+/*4 шаг*/ button.addEventListener('click',  onButtonClick) // добавить прослушиватель (счётчик) событий
+
+
+
+/*3 шаг*/ function onButtonClick() { // при клике на кнопку
+  console.log('hello world');
+} 
+
+В ИТОГЕ В КОНСОЛИ, ПРИ НАЖАТИИ НА НАШУ КНОПКУ, БУДУТ СЧИТАТСЯ ЭТИ НАЖАТИЯ.
+Drag-And-Drop это просьба о перетаскивании какогото предмета визуала.
