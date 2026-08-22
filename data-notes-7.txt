@@ -211,3 +211,4 @@ console.log(age >= 18 ? 'Разрешен' : 'Запрещен')
 | `console.log(a); var a = 10`   | `undefined` |
 | `console.log(a); let a = 10`   | **error**   |
 | `console.log(a); const a = 10` | **error**   |
+
