@@ -51,15 +51,18 @@ const productsDescriptions = products.reduce((result, product) => {
 
 console.log(productsDescriptions);
 
-function getCardsCount() {
-  // Задание 5: 1я Функция, которая запрашивает у пользователя количество карточек для отображения
-  const count = prompt("Сколько карточек отобразить? От 1 до 5");
+// Задание 5: 1я Функция, которая запрашивает у пользователя количество карточек для отображения
 
-  if (count >= 1 && count <= 5) {
-    return count;
+// Задание 5: 1-я функция, которая запрашивает количество карточек
+
+function getCardsCount() {
+  let count = Number(prompt("Сколько карточек отобразить? От 1 до 5"));
+
+  while (!Number.isInteger(count) || count < 1 || count > 5) {
+    count = Number(prompt("Введите целое число от 1 до 5"));
   }
 
-  return 5;
+  return count;
 }
 
 // Задание 5: 2я Функция, которая отображает карточки в зависимости от количества, введённого пользователем
