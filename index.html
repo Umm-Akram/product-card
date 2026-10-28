@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Каталог товаров</title>
+        <link rel="stylesheet" href="/CSS/footer.css">
         <link rel="stylesheet" href="/CSS/rating.css">
         <link rel="stylesheet" href="/CSS/header.css">
         <link rel="stylesheet" href="/CSS/card.css">
@@ -183,10 +184,176 @@
             </li>
         </ul>
         </div>
+    
+
+
+      <footer class="footer">
+        <div class="footer__container">
+          <div>
+            <h2>Product Cards</h2>
+            <p>У нас самые лучшие продукты для кожи!</p>
+          </div>
+          <!-- <div class="footer__info"></div> -->
+          <div class="footer__subscribe">
+            <h2 class="footer__subscribe--tite">Подпишись на наши акции:</h2>
+
+            <form class="footer__form" id="subscribe form">
+              <label class="visually-hidden" for="email">Email</label>
+              <input
+                class="footer__input"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Введи Email..."
+                required
+              />
+
+              <button class="footer__button type="submit">Подписаться</button>
+            </form>
+
+            <button
+              class="registration-button"
+              id="registration-btn"
+              type="button"
+            >
+              Регистрация
+            </button>
+          </div>
+
+          <div>
+            <h2>Быстрые ссылки</h2>
+            <ul>
+              <li>Главная</li>
+              <li>Магазин</li>
+              <li>Контакты</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <div class="modal" id="registration-modal">
+        <div class="modal__overlay"></div>
+
+        <div
+          class="modal__content"
+          role="dialog"
+          aria-mobal="true"
+          aria-labelledby="registration-title"
+        >
+          <button
+            class="modal__close"
+            type="button"
+            aria-label="Закрыть модальное окно"
+          ></button>
+
+          <h2 class="modal__title" id="registration-title">Регистрация</h2>
+
+          <p class="modal__description">Заполните данные для создания аккаунта</p>
+
+          <form class="registration-form" id="registration-form" novalidate>
+            <div class="registration-form__row">
+              <div class="registration-form__field">
+                <label class="registration-form__label" for="first-name"
+                  >Имя</label>
+
+                <input
+                  class="registration-form__input"
+                  id="first-name"
+                  name="firstName"
+                  type="text"
+                  placeholder="Введите имя"
+                  minlength="2"
+                  maxlength="30"
+                  required
+                />
+              </div>
+
+              <div class="registration-form__field">
+                <label class="registration-form__label" for="last-name"
+                  >Фамилия</label>
+
+                <input
+                  class="registration-form__input"
+                  id="last-name"
+                  type="text"
+                  placeholder="Введите фамилию"
+                  minlength="2"
+                  maxlength="30"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="registration-form__field">
+              <label class="registration-form__label" for="birth-date"
+                >Дата рождения</label>
+
+                <input
+                  class="registration-form__input"
+                  id="birth-date"
+                  name="birthDate"
+                  type="date"
+                  required
+                />
+            </div>
+
+            <div class="registration-form__field">
+              <label class="registration-form__label" for="login">Логин</label>
+      
+              <input
+                class="registration-form__input"
+                id="login"
+                name="login"
+                type="text"
+                placeholder="Придумайте логин"
+                minlength="6"
+                maxlength="14"
+                required
+              />
+            </div>
+
+            <div class="registration-form__field">
+              <label class="registration-form__label" for="password">Пароль</label>
+
+              <input
+                class="registration-form__input"
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Минимум 6 символов"
+                minlength="6"
+                required
+              />
+            </div>
+
+            <div class="registration-form__field">
+              <label class="registration-form__label" for="repeat-password">Повторите пароль</label>
+
+              <input
+                class="registration-form__input"
+                id="repeat-password"
+                name="repeatPassword"
+                type="password"
+                placeholder="Введите пароль ещё раз"
+                minlength="6"
+                required
+              />
+            </div>
+
+            <button class="registration-form__submit" type="submit">
+              Зарегистрироваться
+            </button>
+        </form>
+        </div>
+
         <script src="main.js"></script>
         <script src="homework-7.js"></script>
         <script src="homework-8.js"></script>
         <script type="module" src="homework-9.js"></script>
         <script type="module" src="homework-10.js"></script>
+        <script src="7-jan.hw.js"></script>
+
+      <script type="module" src="homework-11.js"></script>
     </body>
-</html>
+  </html>
+
