@@ -69,3 +69,33 @@ console.log(changeColorButton);
 changeColorButton.addEventListener("click", () => {
   changeColorButton.classList.toggle("button--active");
 });
+
+// дом.задание №12
+
+import { Modal } from "./modal.js";
+import { Form } from "./form.js";
+const registerModal = new Modal("registration-modal");
+const registerForm = new Form("registration-form");
+const registerBtn = document.getElementById("registration-btn");
+
+registerBtn.addEventListener("click", () => {
+  registerModal.open();
+});
+
+registerForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // 1) валидируем форму
+  if (!registerForm.isFormValid()) {
+    alert("Форма невалидна, заполните корректно");
+    return;
+  }
+  // 2) получаем данные из формы и сохраняем
+  const values = registerForm.getFormData();
+
+  if (values.password !== values.repeatPassword) {
+    alert("Пароли не совпадают");
+  }
+  delete values.password;
+  delete values.repeatPassword;
+  console.log(values);
+});
