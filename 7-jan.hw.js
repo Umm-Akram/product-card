@@ -1,3 +1,4 @@
+//ДОП.ДЗ №2
 //Часть 1. Объекты
 const user1 = {
   name: "Svetlana",
@@ -173,3 +174,85 @@ console.log(products[0].price);
 //Часть 5. forEach
 //С помощью forEach выведите каждый элемент массива.
 const fruits1 = ["apple", "banana", "orange"];
+
+fruits1.forEach((fruit) => {
+  console.log(fruit);
+});
+
+const boxes = ["a", "b", "c"]; //п-р от моего сыночка мне)
+
+boxes.forEach((box) => {
+  console.log(box);
+});
+// С помощью forEach выведите каждое число.
+const numbers2 = [1, 2, 3, 4, 5];
+
+numbers2.forEach((number) => {
+  console.log(number);
+});
+
+// С помощью forEach выведите: Привет, Amina / Привет, Dana / Привет, Aruzhan.
+const names = ["Amina", "Dana", "Aruzhan"];
+
+names.forEach((name) => {
+  console.log(`Привет, ${name}`);
+});
+
+// Для каждого числа выведите число, умноженное на 2.
+const numbers3 = [2, 4, 6];
+
+numbers3.forEach((number) => {
+  console.log(number * 2);
+});
+
+// Используйте второй параметр forEach — index — и выведите: 0 red, 1 green, 2 blue.
+const colors1 = ["red", "green", "blue"];
+colors1.forEach((color, index) => {
+  console.log(`${index} ${color}`);
+});
+
+// С помощью forEach выведите только элементы, индекс которых меньше 2.
+const numbers4 = [10, 20, 30, 40];
+numbers4.forEach((number, index) => {
+  if (index < 2) {
+    console.log(number);
+  }
+});
+
+//С помощью forEach выведите название каждого товара.
+const products = [
+  { name: "Phone", price: 300000 },
+  { name: "Laptop", price: 500000 },
+  { name: "Tablet", price: 200000 },
+];
+products.forEach(function (product) {
+  console.log(product.name);
+});
+
+//40. В этом же массиве выведите строки вида Phone — 300000.
+const products = [
+  { name: "Phone", price: 300000 },
+  { name: "Laptop", price: 500000 },
+  { name: "Tablet", price: 200000 },
+];
+products.forEach((product) => {
+  console.log(`${product.name} — ${product.price}`);
+});
+
+//41. С помощью forEach выведите только числа больше 10.
+const numbers5 = [1, 5, 10, 15, 20];
+numbers5.forEach((number) => {
+  if (number > 10) {
+    console.log(number);
+  }
+});
+
+//42. Для каждого возраста выведите 'Совершеннолетний' или 'Несовершеннолетний'.
+const ages = [15, 18, 20, 16, 30];
+ages.forEach((age) => {
+  if (age >= 18) {
+    console.log("Совершеннолетний");
+  } else {
+    console.log("Несовершеннолетний");
+  }
+});
